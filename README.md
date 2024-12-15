@@ -1,13 +1,13 @@
 **Email Spam Classification Using Naive Bayes**
 ---
 
-##Overview
+**Overview**
 
 This project focuses on email spam classification using the well-known Naive Bayes algorithm. Based on the Bag of Words model, the classifier is trained to distinguish between spam and non-spam messages. The dataset used for this project is sourced from the Kaggle Repository, and the performance is measured using metrics such as accuracy, precision, recall, and F1-score. The implementation is done using NLTK and Python. The results show an achieved accuracy of approximately 89.12%.
 
 The project includes NLP concepts such as tokenization, lemmatization, stop word removal, the Multinomial Naive Bayes algorithm, the Bag of Words model, and model evaluation metrics.
 
-##Introduction
+**Introduction**
 
 Emails are one of the primary communication mediums for companies and educational institutions in today’s digital world. Filtering spam from non-spam emails is challenging for humans, making automated email spam classification crucial. This project implements a Multinomial Naive Bayes classifier and evaluates its performance.
 
