@@ -3,10 +3,10 @@
 
 **Overview**
 
-This project focuses on email spam classification using the well-known Naive Bayes algorithm. Based on the Bag of Words model, the classifier is trained to distinguish between spam and non-spam emails. The dataset used for this project is sourced from the Kaggle Repository, and the performance is measured using metrics such as accuracy, precision, recall, and F1-score. The implementation is done using NLTK and Python. The results show an achieved accuracy of approximately 89.12%.
+This project focuses on email spam classification using the well-known Naive Bayes algorithm. Based on the Bag of Words model, the classifier is trained to distinguish between spam and non-spam emails. The dataset used for this project is sourced from the Kaggle Repository, and the performance is measured using metrics such as accuracy, precision, recall, and F1-score. The implementation is done using NLTK and Python. The results show an achieved accuracy of approximately 89.17%.
 
 The project implements  NLP tasks  such as tokenization, lemmatization, stop word removal, and implementation  of the Multinomial Naive Bayes algorithm Bag of Words model, and model evaluation metrics.
-
+---
 **Introduction**
 
 Emails are one of the primary communication mediums for companies and educational institutions in today’s digital world. Filtering spam from non-spam emails is challenging for humans, making automated email spam classification crucial. This project implements a Multinomial Naive Bayes classifier and evaluates its performance.
@@ -38,14 +38,24 @@ _Evaluation:_
 
 After training, the classifier is tested on the remaining 25% of the dataset, and its performance is evaluated using: metrics such as f1-score, accuracy, precision, and recall.
 
+_This shows the result:_
+               precision    recall  f1-score  
+
+           0       0.95      0.90      0.92      
+           1       0.76      0.88      0.82 
+     accuracy                           0.89
+
 **Dependencies**
 
 *This project uses the following libraries and tools:*
 
-Python 3.12.2: The core programming language used for implementing the classifier and handling data.
-NumPy: Essential for numerical operations, especially in vectorizing text data.
-Pandas: Used for loading and manipulating the dataset.
-Scikit-learn: implementing the Multinomial Naive Bayes classifier, and evaluating the model through metrics like accuracy, precision, recall, and ROC curves.
-NLTK: For natural language processing tasks such as tokenization and stop word removal.
-Email Spam Collection Dataset: The dataset contains 5172 emails, of which 1527 are spam and the remaining are non-spam.
+**Python 3.12.2**: The core programming language used for implementing the classifier and handling data.
+
+**NumPy**: Essential for numerical operations, especially in vectorizing text data.
+
+**Pandas**: Used for loading and manipulating the dataset.
+
+**Scikit-learn**: implementing the Multinomial Naive Bayes classifier, and evaluating the model through metrics like accuracy,f1-score, precision and recall.
+**NLTK**: For natural language processing tasks such as tokenization and stop word removal.
+**Email Spam Collection Dataset**: The dataset contains 5172 emails, of which 1527 are spam and the remaining are non-spam.
 
