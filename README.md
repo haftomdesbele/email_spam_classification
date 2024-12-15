@@ -17,11 +17,11 @@ Text Preprocessing: Text is processed using tools like NLTK and represented usin
 
 Training a Classifier: Training the Naive Bayes classifier on the dataset.
 
-Performance Evaluation: Measuring the effectiveness of the classifier using metrics such as F1-score, accuracy, precision, and recall.
 
 **Methodology**
 
 *Dataset Preparation:*
+
 Conducting a thorough examination of the dataset to understand the distribution of spam and non-spam emails.
 Understanding the dataset and checking for null data if there exits then,
 The dataset is split into training and testing sets using a 75-25 ratio to ensure a balanced evaluation of the model.
@@ -29,24 +29,18 @@ Stop words like "is," "am," "are," and "in" are removed as they do not contribut
 From the 3000 columns in the dataset, removing stop words reduced the features to 2867 columns.
 For the final classifier, 228 columns with the highest frequency in the dataset were used to improve the model's performance.
 
-Training:
+*Training:*
 
 The Multinomial Naive Bayes classifier is trained using the word frequency from the training set.
-
 The model learns the probability distributions of words in spam and non-spam emails, enabling it to make predictions on unseen data.
 
-Evaluation:
+_Evaluation:_
 
-After training, the classifier is tested on the remaining 25% of the dataset, and its performance is evaluated using:
+After training, the classifier is tested on the remaining 25% of the dataset, and its performance is evaluated using: metrics such as f1-score, accuracy, precision, and recall.
 
-F1-score
-Accuracy: The proportion of correctly classified messages.
-Precision: The proportion of true spam messages among those classified as spam.
-Recall: The proportion of actual spam messages that were correctly identified.
+**Dependencies**
 
-Dependencies
-
-This project uses the following libraries and tools:
+*This project uses the following libraries and tools:*
 
 Python 3.12.2: The core programming language used for implementing the classifier and handling data.
 NumPy: Essential for numerical operations, especially in vectorizing text data.
