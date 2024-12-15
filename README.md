@@ -33,6 +33,7 @@ The model learns the probability distributions of words in spam and non-spam ema
 After training, the classifier is tested on the remaining 25% of the dataset, and its performance is evaluated using: metrics such as f1-score, accuracy, precision, and recall.
 
 _This shows the result:_
+
                precision    recall  f1-score  
 
            0       0.95      0.90      0.92      
@@ -50,6 +51,8 @@ _This shows the result:_
 **Pandas**: Used for loading and manipulating the dataset.
 
 **Scikit-learn**: implementing the Multinomial Naive Bayes classifier, and evaluating the model through metrics like accuracy,f1-score, precision and recall.
+
 **NLTK**: For natural language processing tasks such as tokenization and stop word removal.
+
 **Email Spam Collection Dataset**: The dataset contains 5172 emails, of which 1527 are spam and the remaining are non-spam.
 
