@@ -2,25 +2,19 @@
 ---
 
 **Overview**
-
+---
 This project focuses on email spam classification using the well-known Naive Bayes algorithm. Based on the Bag of Words model, the classifier is trained to distinguish between spam and non-spam emails. The dataset used for this project is sourced from the Kaggle Repository, and the performance is measured using metrics such as accuracy, precision, recall, and F1-score. The implementation is done using NLTK and Python. The results show an achieved accuracy of approximately 89.17%.
 
 The project implements  NLP tasks  such as tokenization, lemmatization, stop word removal, and implementation  of the Multinomial Naive Bayes algorithm Bag of Words model, and model evaluation metrics.
----
-**Introduction**
 
+**Introduction**
+---
 Emails are one of the primary communication mediums for companies and educational institutions in today’s digital world. Filtering spam from non-spam emails is challenging for humans, making automated email spam classification crucial. This project implements a Multinomial Naive Bayes classifier and evaluates its performance.
 
 
-
-Text Preprocessing: Text is processed using tools like NLTK and represented using the Bag of Words model to enable effective learning.
-
-Training a Classifier: Training the Naive Bayes classifier on the dataset.
-
-
 **Methodology**
-
-*Dataset Preparation:*
+---
+***Dataset Preparation:***
 
 Conducting a thorough examination of the dataset to understand the distribution of spam and non-spam emails.
 Understanding the dataset and checking for null data if there exits then,
@@ -29,12 +23,12 @@ Stop words like "is," "am," "are," and "in" are removed as they do not contribut
 From the 3000 columns in the dataset, removing stop words reduced the features to 2867 columns.
 For the final classifier, 228 columns with the highest frequency in the dataset were used to improve the model's performance.
 
-*Training:*
+***Training:***
 
 The Multinomial Naive Bayes classifier is trained using the word frequency from the training set.
 The model learns the probability distributions of words in spam and non-spam emails, enabling it to make predictions on unseen data.
 
-_Evaluation:_
+**_Evaluation:_**
 
 After training, the classifier is tested on the remaining 25% of the dataset, and its performance is evaluated using: metrics such as f1-score, accuracy, precision, and recall.
 
@@ -46,7 +40,7 @@ _This shows the result:_
      accuracy                           0.89
 
 **Dependencies**
-
+---
 *This project uses the following libraries and tools:*
 
 **Python 3.12.2**: The core programming language used for implementing the classifier and handling data.
